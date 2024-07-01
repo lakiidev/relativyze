@@ -1,6 +1,6 @@
 # Relativyze
 
-##Project Overview
+## Project Overview
 Explore Relativyze, your go-to dashboard app for harnessing the power of a word similarity API. With Relativyze, you can easily set up your API key and dive into the world of linguistic analysis. Whether you're conducting research, developing AI models, or refining content, Relativyze simplifies the process of analyzing and visualizing word similarities. This platform is ideal for anyone looking to uncover deeper insights into language patterns and relationships.
 
 ## About development
