@@ -16,7 +16,7 @@ export function Toast({ visible, className, ...props }: ToastProps) {
     <div
       className={cn(
         "min-h-16 mb-2 flex w-[350px] flex-col items-start gap-1 rounded-md bg-white px-6 py-4 shadow-lg",
-        visible && "animate-in slide-in-from-bottom-5",
+        visible ? "animate-in slide-in-from-bottom-5" : "",
         className
       )}
       {...props}
@@ -70,13 +70,7 @@ export function toast(opts: ToastOpts) {
 
   return hotToast.custom(
     ({ visible }) => (
-      <Toast
-        visible={visible}
-        className={cn({
-          "bg-red-600 text-white": type === "error",
-          "bg-black text-white": type === "success",
-        })}
-      >
+      <Toast visible={visible}>
         <Toast.Title>{title}</Toast.Title>
         {message && <Toast.Description>{message}</Toast.Description>}
       </Toast>
